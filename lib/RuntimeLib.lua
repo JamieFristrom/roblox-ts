@@ -125,7 +125,7 @@ function TS.import(module, ...)
 				end
 			end
 
-			assert(_G[module] == nil, "Invalid module access!")
+--			assert(_G[module] == nil, "Invalid module access!")
 			_G[module] = TS
 			data = { value = require(module) }
 
